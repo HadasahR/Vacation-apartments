@@ -1,0 +1,27 @@
+.nav {
+    text-align: center; 
+    display: flex;
+    float: left;
+    margin-left: 405px;
+    justify-content: center;
+    margin-top: 10px;
+    background-color:transparent;
+    font-size:x-large;
+  }
+
+.link {
+    color:#E9E2D8 ;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+.link:hover {
+    /* color: chartreuse; */
+}
+
+/* class יצירת 
+הפעיל link שריאקט תזהה אותו ותפעיל אותו עבור ה  */
+.active {
+    color: rgb(15, 12, 15);
+    font-size: larger;
+}

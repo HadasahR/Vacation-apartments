@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* padding-left: 70px; */
+  }
+  .containerMy{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .card {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: 300px; /* גודל מקסימלי של כרטיס */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-content {
+    padding: 10px;
+
+  }
+  
+  .card-content h7 {
+    margin-bottom: 0;
+  }
+  
+  .card-content h3,
+  .card-content h5 {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-actions button {
+    padding: 5px;
+  }
+  #backgroundImg{
+    background-image:url('../css/ריק.jpg'); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: -10px;
+    width: auto; 
+     height: auto; 
+  }
+  #btn{
+    background-color: #ffffff ;
+    color:black;
+   border-color: black;
+  }
+  #btnFilter{
+   margin-top: 20px;
+   margin-right: 400px;
+   margin-left: 700px;
+   background-color: #E9E2D8 ;
+   color:black;
+   border-color: black;
+  }
+  .btnAdd{
+    background-color: #3f3526;
+  }
+  #allCards{
+    margin-top: 100px;
+  }
+  #boxFilter{
+    /* background-color: #E9E2D8; */
+  }
+ #btnAdd{
+    background-color: #000000
+    ;
+  }
+  
