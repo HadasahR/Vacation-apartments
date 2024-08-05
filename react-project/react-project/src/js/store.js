@@ -2,12 +2,10 @@ import { produce } from 'immer';
 
 import { createStore } from 'redux';
 const initialState = {
-
     currentUser: null,
     isAdvertiser: false,
     isUser: false,
     token: null
-
 }
 const reducer = produce((state, action) => {
 
