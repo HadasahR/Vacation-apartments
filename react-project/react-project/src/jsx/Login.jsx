@@ -25,7 +25,6 @@ export const Login = () => {
   const emailRef = useRef()
   const passRef = useRef()
   const login = (event) => {
-    // event.preventDefault()
     const u = {
       email: document.getElementById('email').value,
       password: document.getElementById('pass').value

@@ -28,7 +28,6 @@ const reducer = produce((state, action) => {
 
 }, initialState)
 
-//יצירת המחסן - מקבל את הרדיוסר
 const store = createStore(reducer)
 window.store = store;
 export default store;

@@ -48,9 +48,7 @@ export const AddApartment = () => {
         console.log(error);
       })
   }, [])
-  //add city
   const handleAddCity = () => {
-    debugger
     Swal.fire({
       title: 'Add City',
       html: `
@@ -88,7 +86,6 @@ export const AddApartment = () => {
         })
     });
   }
-  //add category 
   const handleAddCategory = () => {
     Swal.fire({
       title: 'Add Category',
@@ -127,7 +124,6 @@ export const AddApartment = () => {
         })
     });
   }
-  //add apartment
   const send = (event) => {
     event.preventDefault();
     console.log(event.target[3].value);
@@ -158,7 +154,6 @@ export const AddApartment = () => {
     console.log(formData.get('descreption'));
     console.log(formData.get('cityId'));
     console.log(formData.get('img'));
-    debugger
     addApartment(formData)
       .then((x) => {
         debugger

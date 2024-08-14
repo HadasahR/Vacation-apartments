@@ -59,8 +59,6 @@ const handleCloseUser = () => {
             .then(x => {
               swal("Hello!", "welcometo our site", "success");
               nav('/AllApartments')
-              // nav('/AddApartment')
-              // setData(x.data)
             }
             )
             .catch(err => {

@@ -9,9 +9,7 @@ export const Main = () => {
   return <>
    <Provider store={store}>
    <BrowserRouter>
-            {/* nav טוענת את ה */}
             <Nav></Nav>
-            {/* טוענת את כל הצהרות הניתובים */}
             <Routing></Routing>
         </BrowserRouter>
         </Provider>

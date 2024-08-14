@@ -11,8 +11,6 @@ import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Button from '@mui/material/Button';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-import Snackbar from '@mui/material/Snackbar';
-import Alert from '@mui/material/Alert';
 
 export const AllApartments = () => {
   const [expanded, setExpanded] = React.useState(false);
@@ -39,7 +37,6 @@ export const AllApartments = () => {
     }
     setState({ ...state, [anchor]: open });
   };
-  //הצגת כל הדירות
   const handleShowAll = () => {
     setFilterApartments(listApartments)
   }
@@ -65,11 +62,7 @@ export const AllApartments = () => {
       border: '1px solid #dadde9',
     },
   }));
-  //מחיר
   const handleSortPrice = () => {
-    debugger
-    // console.log(maxRef.current.Value);
-    // console.log(minRef);
     const min = document.getElementById("2").value
     const max = document.getElementById("3").value
     sortByPrice(parseInt(min), parseInt(max))
@@ -80,7 +73,6 @@ export const AllApartments = () => {
         console.log(error);
       })
   }
-  //מספר מיטות
   const handleSortNumBeds = () => {
     debugger
     sortByNumBeds(document.getElementById("1").value)
@@ -166,11 +158,8 @@ export const AllApartments = () => {
       })
   }, [])
   const handleSortCity = (event) => {
-    // alert(event.target.value)
-    debugger
     sortByCity(event.target.value)
       .then((x) => {
-        // console.log(x.data);
         setFilterApartments(x.data.apartments)
       })
       .catch((error) => {
@@ -181,7 +170,6 @@ export const AllApartments = () => {
     debugger
     sortByCategory(event.target.value)
       .then((x) => {
-        // console.log(x.data);
         setFilterApartments(x.data.apartments)
       })
       .catch((error) => {

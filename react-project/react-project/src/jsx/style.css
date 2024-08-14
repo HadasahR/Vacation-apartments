@@ -16,11 +16,9 @@
 }
 
 .link:hover {
-    /* color: chartreuse; */
 }
 
-/* class יצירת 
-הפעיל link שריאקט תזהה אותו ותפעיל אותו עבור ה  */
+
 .active {
     color: rgb(15, 12, 15);
     font-size: larger;

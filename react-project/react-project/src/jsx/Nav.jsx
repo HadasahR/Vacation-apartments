@@ -8,7 +8,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 export const Nav = () => {
     const currentUser = JSON.parse(localStorage.getItem('currentAdvertiser'))
-    const isAdvertiser=useSelector(x=>x.isAdvertiser)
     return <>
         <div className={'nav'}>
             <NavLink to='HomePage' className={'link'}><HomeIcon></HomeIcon></NavLink>
@@ -17,7 +16,6 @@ export const Nav = () => {
             <NavLink to='AllApartments' className={'link'}><ApartmentIcon></ApartmentIcon></NavLink>
           {currentUser && <NavLink to='AddApartment' className={'link'}><AddHomeWorkIcon></AddHomeWorkIcon></NavLink>}
           {currentUser && <NavLink to='MyApartments' className={'link'}>MyApartments</NavLink>}
-         {/* {isAdvertiser&&<h6>{currentUser.email}</h6>}    */}
         </div>
     </>
 }

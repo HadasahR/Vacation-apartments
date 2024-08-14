@@ -4,10 +4,6 @@ import Swal from "sweetalert2";
 import { deleteApartmentById, apartmentUpdate, getMyApartments } from '../js/api';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import ShareIcon from '@mui/icons-material/Share';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -52,7 +48,6 @@ export const MyApartments = () => {
         console.log(err);
       })
   }
-  //עדכון דירה
   const updateApartment = (x) => {
     debugger
     Swal.fire({
